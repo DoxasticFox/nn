@@ -59,7 +59,7 @@ def gradientDescentStep(Xs, Ts, Bs, rate):
     return l1
 
 def gradientDescent(Xs, Ts, Bs=None, rate=1.1):
-    numUnits = 100
+    numUnits = 10
     if not Bs:
         Bs = [random.uniform(-1.0, 1.0) for i in range(numUnits * 4)]
 
